@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="main_css.css">
+    <link rel="stylesheet" href="my_events.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="main.js"></script>
+    <script type="module" src="my_events.js"></script>
 </head>
 <body>
 <div class="sidebar">
@@ -58,7 +61,11 @@
     </ul>
 </div>
 <section class="home-section">
-    <div class="text">My Events</div>
+    <div id="map"> </div>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnPK4-AIzaSyAUoUWkFWuOWBkP06s6tbmg_LNcRHGMClo&callback=initMap&v=weekly"
+        async></script>
 </section>
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 <script>
@@ -77,5 +84,5 @@
 </script>
 </script>
 </body>
-<script type="module" src="main.js"></script>
+
 </html>

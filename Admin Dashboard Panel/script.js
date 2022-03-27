@@ -23,8 +23,6 @@ function readAll(){
 
 readAll();
 
-alert('hello');
-
 const body = document.querySelector("body"),
       modeToggle = body.querySelector(".mode-toggle");
       sidebar = body.querySelector("nav");

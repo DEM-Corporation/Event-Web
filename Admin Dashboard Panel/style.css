@@ -488,3 +488,69 @@ nav.close ~ .dashboard .top{
     background-color: #fff;
     color: #000;
 }
+
+.review_item{
+    position: relative;
+    width: 385px;
+    height: 184px;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 25%;
+}
+
+.review_author_nickname{
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 78px;
+}
+
+.review_publication_date{
+    position:absolute;
+    margin-left: 78px;
+    margin-top: 42px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.03 em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.review_image{
+    position: absolute;
+    margin-left: 335px;
+    margin-top: 24px;
+}
+
+.main_text_review{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 81px;
+    font-size: 16px;
+}
+
+.likes_txt{
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 150px;
+    font-size: 14px;
+}
+
+.like_btn{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 119px;
+}
+
+.comment_btn{
+    position: absolute;
+    margin-left: 53px;
+    margin-top: 120px;
+}
+
+.profile_image{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15px;
+}

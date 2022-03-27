@@ -9,7 +9,7 @@
     <body>
         <style>
             body{
-                background-color: #f3f3f3;
+                background-color: #fff;
             }
             .review_item{
                 position: relative;
@@ -42,13 +42,48 @@
                 margin-top: 24px;
             }
 
+            .main_text_review{
+                position: absolute;
+                margin-left: 25px;
+                margin-top: 81px;
+                font-size: 16px;
+            }
+
+            .likes_txt{
+                position: absolute;
+                margin-left: 28px;
+                margin-top: 150px;
+                font-size: 14px;
+            }
+
+            .like_btn{
+                position: absolute;
+                margin-left: 25px;
+                margin-top: 119px;
+            }
+
+            .comment_btn{
+                position: absolute;
+                margin-left: 53px;
+                margin-top: 120px;
+            }
+
+            .profile_image{
+                position: absolute;
+                margin-left: 20px;
+                margin-top: 15px;
+            }
+
         </style>
         <div class="review_item"> 
-            <!-- <i class="uil uil-user-circle" style="margin-top: 10px; margin-left: 10px;"></i> -->
+            <img class="profile_image" src="Images/profile_circle.svg"> </img>
             <p class="review_author_nickname"> Mikhail Maevskiy </p>
             <p class="review_publication_date"> 01.11.2021 09:49</p>
-
-            <img class="review_image" src="Images/menu_icon.svg"></i>
+            <img class="review_image" src="Images/menu_icon.svg"></img>
+            <p class="main_text_review"> Nice party! Party, party. Party </p>
+            <img class="like_btn" src="Images/like_filled.svg"> </img>
+            <img class="comment_btn" src="Images/comment_icon.svg"> </img>
+            <p class="likes_txt"> Likes: 1</p> 
         </div>
     </body>
 </html>

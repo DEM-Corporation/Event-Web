@@ -1,10 +1,21 @@
-function readAll(){ //this function reads all data from realtime database (invites and reviews)
+function readAll(){
     const box = document.querySelector(".box");
 
     let tag="";
 
     for (var i=0; i<3; i++){
-        tag += "<p class='il'> Hello, World </p>";
+        tag += `
+        <div class="review_item"> 
+        <img class="profile_image" src="Images/profile_circle.svg"> </img>
+        <p class="review_author_nickname"> Mikhail Maevskiy </p>
+        <p class="review_publication_date"> 01.11.2021 09:49</p>
+        <img class="review_image" src="Images/menu_icon.svg"></img>
+        <p class="main_text_review"> Nice party! Party, party. Party </p>
+        <img class="like_btn" src="Images/like_filled.svg"> </img>
+        <img class="comment_btn" src="Images/comment_icon.svg"> </img>
+        <p class="likes_txt"> Likes: 1</p> 
+        </div>
+        `;
     }
 
     box.innerHTML = tag;
@@ -12,11 +23,13 @@ function readAll(){ //this function reads all data from realtime database (invit
 
 readAll();
 
+alert('hello');
+
 const body = document.querySelector("body"),
       modeToggle = body.querySelector(".mode-toggle");
       sidebar = body.querySelector("nav");
       sidebarToggle = body.querySelector(".sidebar-toggle"),
-      item = body.querySelector(".il");
+      item = body.querySelector(".review_item");
 
 
 let getMode = localStorage.getItem("mode");
@@ -49,7 +62,6 @@ sidebarToggle.addEventListener("click", () => {
 })
 
 
-//logic for switchable tabs
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
 

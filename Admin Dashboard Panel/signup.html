@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="signup_styles.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Log In</h3>
+    <input type="name" placeholder="Username..." id="username_field"/>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="register()">Sign up</button>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    const config = {
+      apiKey: "AIzaSyBhJFUzz0NFPfj2FUHsVKHwWNMg_IrFKv8",
+      authDomain: "event-platform-c45a3.firebaseapp.com",
+      databaseURL: "https://event-platform-c45a3.firebaseio.com",
+      projectId: "event-platform-c45a3",
+      storageBucket: "event-platform-c45a3.appspot.com",
+      messagingSenderId: "563366618488",
+      appId: "1:563366618488:web:b814f40cb1d0535c2b548d",
+      measurementId: "G-P4R4S36FCB"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="singup.js"></script>
+
+</body>
+</html>

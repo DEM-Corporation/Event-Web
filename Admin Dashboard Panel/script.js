@@ -21,6 +21,12 @@ function readAll(){
     box.innerHTML = tag;
 }
 
+function logout(){
+    firebase.auth().signOut();
+    window.alert("logged out");
+    window.location.href="signup.html";
+}
+
 readAll();
 
 const body = document.querySelector("body"),
@@ -28,7 +34,6 @@ const body = document.querySelector("body"),
       sidebar = body.querySelector("nav");
       sidebarToggle = body.querySelector(".sidebar-toggle"),
       item = body.querySelector(".review_item");
-
 
 let getMode = localStorage.getItem("mode");
 if(getMode && getMode ==="dark"){
